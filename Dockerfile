@@ -1,6 +1,6 @@
-FROM nginx:latest
+FROM unbuntu:latest
 
-RUN apk update \
- && apk add bash curl
+RUN apt update \
+ && apt install -y bash curl
 
 CMD ["bash"]
