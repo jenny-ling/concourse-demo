@@ -1,6 +1,6 @@
 FROM nginx:alpine
 
-RUN apt-get update \
- && apt-get install -y bash curl
+RUN apk update \
+ && apk add bash curl
 
 CMD ["bash"]
