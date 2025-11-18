@@ -1,6 +1,6 @@
-FROM unbuntu:latest
+FROM nginx:1.29.3
 
-RUN apt update \
- && apt install -y bash curl
+RUN apt-get update \
+ && apt-get install -y bash curl
 
 CMD ["bash"]
